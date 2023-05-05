@@ -1,14 +1,16 @@
+import java.util.Scanner;
+
 public class Bilhete {
     private int numero;
     private String assento;
     private Passageiro passageiro;
     private Horario horario;
-    private String situacao;
+    private SituacaoBilhete situacao;
 
     public Bilhete() {
     }
 
-    public Bilhete(int numero, String assento, Passageiro passageiro, Horario horario, String situacao) {
+    public Bilhete(int numero, String assento, Passageiro passageiro, Horario horario, SituacaoBilhete situacao) {
         this.numero = numero;
         this.assento = assento;
         this.passageiro = passageiro;
@@ -48,11 +50,27 @@ public class Bilhete {
         this.horario = horario;
     }
 
-    public String getSituacao() {
+    public SituacaoBilhete getSituacao() {
         return situacao;
     }
 
-    public void setSituacao(String situacao) {
+    public void setSituacao(SituacaoBilhete situacao) {
         this.situacao = situacao;
+    }
+
+    public void reservar(Passageiro passageiro) {
+
+    }
+
+    public void comprar() {
+
+    }
+
+    public void cancelarReserva() {
+
+    }
+
+    public void checkin(Bagagem bagagem) {
+
     }
 }
